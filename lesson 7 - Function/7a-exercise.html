@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>functions</title>
+</head>
+<body>
+  
+  
+  <script>
+    // Name's function
+    function greet(name) {
+
+      if (!name){
+        console.log('hi there');
+      }else 
+      console.log(`Hello ${name}`);
+    }
+    greet('fometio');
+
+
+    // convertion function (Celsius&Fahrenheit)
+  
+
+    function convertTemperature (degrees, unit){
+      //typeDegrees should be F(fahrenheit) or C(celsius)
+
+      if (unit === 'F') {
+        const C = (degrees - 32) * 5/9;
+        return `${C} C`;
+      } else if (unit === 'C') {
+        const F = (degrees * 9/5) +32;
+        return `${C} F`
+      }
+    }
+    console.log(convertTemperature (86, 'F'));
+
+  </script>
+  
+</body>
+</html>
